@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-header {
+.header {
     background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий чорний фон для контрасту */
     height: 130px;
     display: flex;
@@ -16,11 +16,7 @@ header {
     padding-left: 20px;
 }
 
-header img {
-    margin-right: 20px;
-}
-
-header button {
+.header .button {
     background-color: #4A90E2; /* Голубий для кнопок */
     color: white;
     border: none;
@@ -30,52 +26,52 @@ header button {
     font-size: 16px;
 }
 
-header button:hover {
+.header .button:hover {
     background-color: #357ABD; /* Темніше голубий при ховері */
 }
 
-main {
+.main {
     padding: 20px;
 }
 
-h1 {
+.main-title {
     color: #4A90E2; /* Голубий для заголовка */
 }
 
-h2 {
+.sub-title {
     color: #E5E5E5; /* Світлий для підзаголовків */
 }
 
-ul {
+.destination-list {
     list-style-type: circle;
 }
 
-table {
+.destination-table {
     width: 50%;
     border-collapse: collapse;
     margin-top: 20px;
     color: #E5E5E5; /* Світлий текст для таблиці */
 }
 
-table, th, td {
+.destination-table, th, td {
     border: 1px solid #444; /* Темна рамка для таблиці */
 }
 
-th, td {
+.destination-table th, .destination-table td {
     padding: 10px;
     text-align: left;
 }
 
-th {
+.destination-table th {
     background-color: #4A90E2; /* Голубий фон для заголовків таблиці */
     color: white;
 }
 
-ol {
+.booking-steps {
     margin-top: 20px;
 }
 
-form {
+.booking-form {
     margin-top: 20px;
     background-color: rgba(0, 0, 0, 0.6); /* Напівпрозорий чорний фон для форми */
     padding: 20px;
@@ -85,14 +81,14 @@ form {
     margin-right: auto;
 }
 
-form label {
+.booking-form label {
     font-size: 16px;
     margin-bottom: 5px;
     display: block;
     color: #E5E5E5; /* Світлий текст для лейблів */
 }
 
-form input[type="text"], form input[type="email"], form input[type="tel"], form input[type="submit"] {
+.booking-form input[type="text"], .booking-form input[type="email"], .booking-form input[type="tel"], .booking-form input[type="submit"] {
     padding: 12px;
     margin: 10px 0;
     width: 100%;
@@ -103,16 +99,16 @@ form input[type="text"], form input[type="email"], form input[type="tel"], form 
     border-radius: 8px; /* Округлі кути */
 }
 
-form input[type="submit"] {
+.booking-form input[type="submit"] {
     background-color: #4A90E2; /* Голубий для кнопки відправки */
     cursor: pointer;
 }
 
-form input[type="submit"]:hover {
+.booking-form input[type="submit"]:hover {
     background-color: #357ABD; /* Темний голубий при ховері */
 }
 
-footer {
+.footer {
     background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий чорний фон для футера */
     color: white;
     padding: 10px;
