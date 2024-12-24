@@ -1,23 +1,26 @@
+/* Теговий селектор для body */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('back.jpg'); /* Замість 'path-to-your-image.jpg' вставте шлях до вашого зображення */
-    background-size: cover; /* Зображення покриває весь екран */
-    background-position: center; /* Центруємо зображення */
-    background-attachment: fixed; /* Зображення не рухається при прокручуванні */
-    color: #E5E5E5; /* Світлий текст для контрасту */
+    background-image: url('back.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #E5E5E5;
     margin: 0;
 }
 
+/* Класовий селектор для header */
 .header {
-    background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий чорний фон для контрасту */
+    background-color: rgba(0, 0, 0, 0.5);
     height: 130px;
     display: flex;
     align-items: center;
     padding-left: 20px;
 }
 
+/* Класовий селектор для кнопок в header */
 .header .button {
-    background-color: #4A90E2; /* Голубий для кнопок */
+    background-color: #4A90E2;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -26,92 +29,103 @@ body {
     font-size: 16px;
 }
 
+/* Идентификатор для формы отправки */
+#booking-form-submit {
+    background-color: #4A90E2;
+    color: white;
+    cursor: pointer;
+}
+
+/* Псевдоклассы для кнопок при наведении */
 .header .button:hover {
-    background-color: #357ABD; /* Темніше голубий при ховері */
+    background-color: #357ABD;
 }
 
-.main {
-    padding: 20px;
+/* Псевдокласс для поля ввода, когда оно в фокусе */
+input:focus {
+    outline: none;
+    border-color: #4A90E2;
 }
 
-.main-title {
-    color: #4A90E2; /* Голубий для заголовка */
+/* Атрибутный селектор для полей формы с обязательным вводом */
+input[required] {
+    background-color: #555;
 }
 
-.sub-title {
-    color: #E5E5E5; /* Світлий для підзаголовків */
+/* Атрибутный селектор для поля ввода email, когда оно в фокусе */
+input[type="email"]:focus {
+    background-color: #333;
+    border: 1px solid #4A90E2;
 }
 
+/* Теговий селектор для h1 */
+h1 {
+    font-size: 24px;
+    color: #4A90E2;
+}
+
+/* Класовий селектор для списков */
 .destination-list {
     list-style-type: circle;
 }
 
-.destination-table {
+/* Теговий селектор для таблицы */
+table {
     width: 50%;
     border-collapse: collapse;
     margin-top: 20px;
-    color: #E5E5E5; /* Світлий текст для таблиці */
 }
 
-.destination-table, th, td {
-    border: 1px solid #444; /* Темна рамка для таблиці */
-}
-
+/* Класовий селектор для ячеек таблицы */
 .destination-table th, .destination-table td {
     padding: 10px;
     text-align: left;
 }
 
+/* Класовий селектор для заголовков таблицы */
 .destination-table th {
-    background-color: #4A90E2; /* Голубий фон для заголовків таблиці */
+    background-color: #4A90E2;
     color: white;
 }
 
+/* Атрибутный селектор для полей ввода телефона, когда введен правильный номер */
+input[type="tel"]:valid {
+    background-color: #7CFC00;
+}
+
+/* Атрибутный селектор для полей ввода телефона, когда введен неправильный номер */
+input[type="tel"]:invalid {
+    background-color: #FF6347;
+}
+
+/* Класовий селектор для шагов бронирования */
 .booking-steps {
     margin-top: 20px;
 }
 
-.booking-form {
-    margin-top: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Напівпрозорий чорний фон для форми */
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+/* Идентификатор для текста подтверждения */
+#confirmation-text {
+    font-size: 18px;
+    color: #FFD700;
 }
 
-.booking-form label {
-    font-size: 16px;
-    margin-bottom: 5px;
-    display: block;
-    color: #E5E5E5; /* Світлий текст для лейблів */
-}
-
-.booking-form input[type="text"], .booking-form input[type="email"], .booking-form input[type="tel"], .booking-form input[type="submit"] {
-    padding: 12px;
-    margin: 10px 0;
-    width: 100%;
-    background-color: #444; /* Темний фон полів */
-    color: white;
-    border: 1px solid #555; /* Світліша рамка */
-    font-size: 16px;
-    border-radius: 8px; /* Округлі кути */
-}
-
-.booking-form input[type="submit"] {
-    background-color: #4A90E2; /* Голубий для кнопки відправки */
-    cursor: pointer;
-}
-
-.booking-form input[type="submit"]:hover {
-    background-color: #357ABD; /* Темний голубий при ховері */
-}
-
-.footer {
-    background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий чорний фон для футера */
+/* Теговий селектор для footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px;
     text-align: center;
     margin-top: 20px;
+}
+
+/* Комбинированный селектор для input и submit */
+form input[type="submit"] {
+    margin-top: 20px;
+    background-color: #4A90E2;
+    cursor: pointer;
+}
+
+/* Псевдокласс для кнопки при наведении */
+form input[type="submit"]:hover {
+    background-color: #357ABD;
 }
